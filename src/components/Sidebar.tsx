@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { IoBrowsers, IoBrowsersOutline, IoBrowsersSharp, IoLogoReact } from "react-icons/io5";
+import { IoAttach, IoBrowsers, IoBrowsersOutline, IoBrowsersSharp, IoCalculatorOutline, IoLogoReact } from "react-icons/io5";
 import { SidebarMenuItem } from ".";
 
 const menuItems = [
@@ -11,10 +11,16 @@ const menuItems = [
     },
     {
         path: '/dasboard/counter',
-        icon: <IoBrowsersSharp size={40}/>,
+        icon: <IoCalculatorOutline size={40}/>,
         title: 'Counter',
         subtitle: 'Blebleble'
     },
+    {
+      path: '/dasboard/pokemones',
+      icon: <IoAttach size={40}/>,
+      title: 'Pokemones',
+      subtitle: 'Pika-Pika-Pika'
+  },
 ]
 
 export const Sidebar = () => {
